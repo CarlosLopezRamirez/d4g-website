@@ -4,7 +4,11 @@
         <title>Data For Good | Exec</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Style Stuff -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Font Stuff-->
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
@@ -41,21 +45,78 @@
                 </div>
               </div>
         </div>
+        <style>
+            .outer-circle {
+                border-radius: 50%;
+                background-color: #F86E51;
+                width: 20rem;
+                height: 20rem;
+                position: relative;
+            }
+
+            .inner-circle {
+                width: 18rem;
+                height: 18rem;
+                margin-top: 1rem;
+                border-radius: 50%;
+            }
+
+            .img_description {
+                top: 0;
+                bottom: 0;
+                border-radius: 50%;
+                margin-top: 1rem;
+                margin-left: 1rem;
+                width: 18rem;
+                height: 18rem;
+                position: absolute;
+                background: rgba(58, 7, 81, .65);
+                color: white;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity .2s, visibility .2s;
+                font-family: Roboto Condensed;
+            }
+
+            .outer-circle:hover .img_description {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .img_description_hr {
+                border: 1px dotted white;
+            }
+        </style>
         <div class="container mt-3">
             <div class="row text-center">
                 <div class="col-sm-4 text-center">
-                    <div class="outer-circle" style="background-color:#F86E51; border-radius: 50%; width: 20rem; height: 20rem">
-                        <img src="./assets/ayush_headshot.png" alt="headshot" style="width: 18rem; height: 18rem; margin-top: 1rem; border-radius: 50%">
+                    <div class="outer-circle">
+                        <img src="./assets/ayush_headshot.png" alt="headshot" class="inner-circle">
+                        <div class="img_description" style="padding: 5.25rem;">
+                            <h4>Ayush Kumar</h4>
+                            <hr class="img_description_hr">
+                            <h6>Executive Director</h6>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <div class="outer-circle" style="background-color:#F86E51; border-radius: 50%; width: 20rem; height: 20rem">
-                        <img src="./assets/eshaan_headshot.jpg" alt="headshot" style="width: 18rem; height: 18rem; margin-top: 1rem; border-radius: 50%;">
+                    <div class="outer-circle">
+                        <img src="./assets/eshaan_headshot.jpg" alt="headshot" class="inner-circle">
+                        <div class="img_description" style="padding: 5.25rem;">
+                            <h4>Eshaan Agrawal</h4>
+                            <hr class="img_description_hr">
+                            <h6>Executive Director</h6>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <div class="outer-circle" style="background-color:#F86E51; border-radius: 50%; width: 20rem; height: 20rem">
-                        <img src="./assets/sophie_headshot.png" alt="headshot" style="width: 18rem; height: 18rem; margin-top: 1rem; border-radius: 50%;">
+                    <div class="outer-circle">
+                        <img src="./assets/sophie_headshot.png" alt="headshot" class="inner-circle">
+                        <div class="img_description" style="padding: 5.25rem;">
+                            <h4>Sophie Murtey</h4>
+                            <hr class="img_description_hr">
+                            <h6>Executive Director</h6>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,18 +125,33 @@
         <div class="container mt-3">
             <div class="row text-center">
                 <div class="col-sm-4 text-center">
-                    <div class="outer-circle" style="background-color:#F86E51; border-radius: 50%; width: 20rem; height: 20rem">
-                        <img src="./assets/albert_headshot.JPG" alt="headshot" style="width: 18rem; height: 18rem; margin-top: 1rem; border-radius: 50%">
+                    <div class="outer-circle">
+                        <img src="./assets/albert_headshot.JPG" alt="headshot" class="inner-circle">
+                        <div class="img_description" style="padding: 5.25rem;">
+                            <h4>Albert Chen</h4>
+                            <hr class="img_description_hr">
+                            <h6>Campus Outreach Head</h6>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <div class="outer-circle" style="background-color:#F86E51; border-radius: 50%; width: 20rem; height: 20rem">
-                        <img src="./assets/chris_headshot.jpg" alt="headshot" style="width: 18rem; height: 18rem; margin-top: 1rem; border-radius: 50%;">
+                    <div class="outer-circle">
+                        <img src="./assets/chris_headshot.jpg" alt="headshot" class="inner-circle">
+                        <div class="img_description" style="padding: 5.25rem;">
+                            <h4>Christopher Rosselot</h4>
+                            <hr class="img_description_hr">
+                            <h6>Alumni Relations Head</h6>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <div class="outer-circle" style="background-color:#F86E51; border-radius: 50%; width: 20rem; height: 20rem">
-                        <img src="./assets/Shashank Corsair Headshot.jpeg" alt="headshot" style="width: 18rem; height: 18rem; margin-top: 1rem; border-radius: 50%;">
+                    <div class="outer-circle">
+                        <img src="./assets/Shashank Corsair Headshot.jpeg" alt="headshot" class="inner-circle">
+                        <div class="img_description" style="padding: 5.25rem;">
+                            <h4>Shashank Ganeshan</h4>
+                            <hr class="img_description_hr">
+                            <h6>Data Project Leader</h6>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,22 +160,38 @@
         <div class="container mt-3">
             <div class="row text-center">
                 <div class="col-sm-4 text-center">
-                    <div class="outer-circle" style="background-color:#F86E51; border-radius: 50%; width: 20rem; height: 20rem">
-                        <img src="./assets/brie_headshot.png" alt="headshot" style="width: 18rem; height: 18rem; margin-top: 1rem; border-radius: 50%">
+                    <div class="outer-circle">
+                        <img src="./assets/brie_headshot.png" alt="headshot" class="inner-circle">
+                        <div class="img_description" style="padding: 5.25rem;">
+                            <h4>Brie Levitt</h4>
+                            <hr class="img_description_hr">
+                            <h6>Communications Head</h6>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <div class="outer-circle" style="background-color:#F86E51; border-radius: 50%; width: 20rem; height: 20rem">
-                        <img src="./assets/jeffrey_headshot.png" alt="headshot" style="width: 18rem; height: 18rem; margin-top: 1rem; border-radius: 50%;">
+                    <div class="outer-circle">
+                        <img src="./assets/jeffrey_headshot.png" alt="headshot" class="inner-circle">
+                        <div class="img_description" style="padding: 5.25rem;">
+                            <h4>Jeffery John</h4>
+                            <hr class="img_description_hr">
+                            <h6>Community Outreach Head</h6>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <div class="outer-circle" style="background-color:#F86E51; border-radius: 50%; width: 20rem; height: 20rem">
-                        <img src="./assets/Shashank Corsair Headshot.jpeg" alt="headshot" style="width: 18rem; height: 18rem; margin-top: 1rem; border-radius: 50%;">
+                    <div class="outer-circle">
+                        <img src="./assets/kunal_headshot.JPG" alt="headshot" class="inner-circle">
+                        <div class="img_description" style="padding: 5.25rem;">
+                            <h4>Kunal Vohra</h4>
+                            <hr class="img_description_hr">
+                            <h6>Head of Panels and Workshops</h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <br>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
